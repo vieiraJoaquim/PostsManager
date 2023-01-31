@@ -21,6 +21,11 @@ public class UserDTO implements Serializable {
 		email = obj.getEmail();
 	}
 
+//	public UserDTO(Optional<User> obj) {
+//		// TODO Auto-generated constructor stub
+//		
+//	}
+
 	public String getId() {
 		return id;
 	}
