@@ -29,6 +29,18 @@ public class UserService {
 		userRepository.deleteById(id);
 	}
 	
+//	public User update(User obj) {
+//		User newObj = userRepository.findOne(obj.getId());
+//		updateData(newObj, obj);
+//		return userRepository.save(newObj);
+//	}
+//	
+//	private void updateDataoO(User newObj, User obj) {
+//		// TODO Auto-generated method stub
+//		newObj.setEmail(obj.getEmail());
+//		newObj.setName(obj.getName());
+//	}
+
 	//Implementando fromDTO na inserção de dados.
 	public User fromDTO(UserDTO objDTO) {
 		return new User(objDTO.getId(), objDTO.getName(), objDTO.getEmail());
